@@ -1,0 +1,23 @@
+* {
+    text-align: center;
+
+}
+
+label {
+    display:block;
+}
+
+input.radio {
+    display:inline;
+}
+
+.headerFooter {
+    border:maroon 3px solid;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0% 20% 0% 20%;
+}
+
+ul.li {
+    display:inline;
+}

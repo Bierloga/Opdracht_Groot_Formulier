@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Receptenboek</title>
+</head>
+
+<body>
+
+    <header class="headerFooter">
+        <h1>Olaf's Groot Receptenboek</h1>
+    </header>
+    <hr>
+    <main>
+        <h2>Recepten indienen</h2>
+        <p>Zou U ook graag uw eigen recept terug willen zien in Olaf's receptenboek. Vul dan a.u.b. het onderstaande
+            formulier in.</p>
+
+        <form name="recepten" method="POST" data-netlify="true">
+            <label>Naam: <input type="text" name="name" /></label><br>
+            <label>Email: <input type="email" name="email" /></label><br>
+            <label>Telefoonnummer: <input type="tel" name="phone" placeholder="06-" /></label><br>
+            <label>Leeftijd: <input type="number" name="age" /></label><br>
+            <label>Geboortedatum: <input type="date" name="dateOfBirth" /></label><br>
+            <label>Geslacht: <input type="radio" name="gender" value="Man"> Man
+                <input type="radio" name="gender" value="Woman"> Vrouw
+                <input type="radio" name="gender" value="Other"> Anders</label><br>
+            <label>Favoriete cuisine: <input type="checkbox" name="cuisine" value="Arab"> Arabisch
+                <input type="checkbox" name="cuisine" value="French"> Frans
+                <input type="checkbox" name="cuisine" value="Spanish"> Spaans
+                <input type="checkbox" name="cuisine" value="Italian"> Italiaans
+            </label>
+            (Meerdere antwoorden mogelijk) <br><br>
+            <label>Schortkleur: <input type="color" name="apron"></label><br>
+            <label>Biografie: <textarea rows="10" cols="30" name="biography"></textarea></label><br>
+            <label>Upload een recept: <input type="file" name="recipe"></label><br>
+            <label>Link naar eigen receptenwebsite: <input type="url" name="website"></label><br>
+            <input type="reset" value="Wissen" /><br><br>
+            <input type="submit" value="Verzenden" /><br>
+
+
+        </form>
+    </main>
+    <hr>
+    <footer class="headerFooter">
+        <h3>Voor andere goede recepten:</h3>
+        <ul style="list-style-type:none;">
+            <li><a href="http://www.kookidee.nl" target="_blank">Kookidee</a></li>
+            <li><a href="http://www.myfoodblog.nl" target="_blank">MyFoodBlog</a></li>
+            <li><a href="http://www.foody.nl" target="_blank">Foody</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
